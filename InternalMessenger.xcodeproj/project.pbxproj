@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		CA871DC11D09A27E00278BD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA871DC01D09A27E00278BD2 /* AppDelegate.swift */; };
-		CA871DC31D09A27E00278BD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA871DC21D09A27E00278BD2 /* ViewController.swift */; };
-		CA871DC61D09A27E00278BD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA871DC41D09A27E00278BD2 /* Main.storyboard */; };
 		CA871DC81D09A27E00278BD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA871DC71D09A27E00278BD2 /* Assets.xcassets */; };
 		CA871DCB1D09A27E00278BD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA871DC91D09A27E00278BD2 /* LaunchScreen.storyboard */; };
+		CA871DD41D09A2C100278BD2 /* User1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA871DD21D09A2C100278BD2 /* User1ViewController.swift */; };
+		CA871DD51D09A2C100278BD2 /* User1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA871DD31D09A2C100278BD2 /* User1ViewController.xib */; };
+		CA871DD81D09A2F000278BD2 /* User2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA871DD61D09A2F000278BD2 /* User2ViewController.swift */; };
+		CA871DD91D09A2F000278BD2 /* User2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA871DD71D09A2F000278BD2 /* User2ViewController.xib */; };
+		CA871DDC1D09A43F00278BD2 /* Siri_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CA871DDB1D09A43F00278BD2 /* Siri_icon.png */; };
+		CA871DDE1D09A44400278BD2 /* camera_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CA871DDD1D09A44400278BD2 /* camera_icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CA871DBD1D09A27E00278BD2 /* InternalMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InternalMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA871DC01D09A27E00278BD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CA871DC21D09A27E00278BD2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CA871DC51D09A27E00278BD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CA871DC71D09A27E00278BD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA871DCA1D09A27E00278BD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA871DCC1D09A27E00278BD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA871DD21D09A2C100278BD2 /* User1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User1ViewController.swift; sourceTree = "<group>"; };
+		CA871DD31D09A2C100278BD2 /* User1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = User1ViewController.xib; sourceTree = "<group>"; };
+		CA871DD61D09A2F000278BD2 /* User2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User2ViewController.swift; sourceTree = "<group>"; };
+		CA871DD71D09A2F000278BD2 /* User2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = User2ViewController.xib; sourceTree = "<group>"; };
+		CA871DDB1D09A43F00278BD2 /* Siri_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Siri_icon.png; sourceTree = "<group>"; };
+		CA871DDD1D09A44400278BD2 /* camera_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera_icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,26 @@
 		CA871DBF1D09A27E00278BD2 /* InternalMessenger */ = {
 			isa = PBXGroup;
 			children = (
+				CA871DDA1D09A42E00278BD2 /* images */,
 				CA871DC01D09A27E00278BD2 /* AppDelegate.swift */,
-				CA871DC21D09A27E00278BD2 /* ViewController.swift */,
-				CA871DC41D09A27E00278BD2 /* Main.storyboard */,
 				CA871DC71D09A27E00278BD2 /* Assets.xcassets */,
 				CA871DC91D09A27E00278BD2 /* LaunchScreen.storyboard */,
 				CA871DCC1D09A27E00278BD2 /* Info.plist */,
+				CA871DD21D09A2C100278BD2 /* User1ViewController.swift */,
+				CA871DD31D09A2C100278BD2 /* User1ViewController.xib */,
+				CA871DD61D09A2F000278BD2 /* User2ViewController.swift */,
+				CA871DD71D09A2F000278BD2 /* User2ViewController.xib */,
 			);
 			path = InternalMessenger;
+			sourceTree = "<group>";
+		};
+		CA871DDA1D09A42E00278BD2 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				CA871DDD1D09A44400278BD2 /* camera_icon.png */,
+				CA871DDB1D09A43F00278BD2 /* Siri_icon.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +142,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA871DD91D09A2F000278BD2 /* User2ViewController.xib in Resources */,
+				CA871DDE1D09A44400278BD2 /* camera_icon.png in Resources */,
+				CA871DDC1D09A43F00278BD2 /* Siri_icon.png in Resources */,
+				CA871DD51D09A2C100278BD2 /* User1ViewController.xib in Resources */,
 				CA871DCB1D09A27E00278BD2 /* LaunchScreen.storyboard in Resources */,
 				CA871DC81D09A27E00278BD2 /* Assets.xcassets in Resources */,
-				CA871DC61D09A27E00278BD2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +158,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA871DC31D09A27E00278BD2 /* ViewController.swift in Sources */,
 				CA871DC11D09A27E00278BD2 /* AppDelegate.swift in Sources */,
+				CA871DD81D09A2F000278BD2 /* User2ViewController.swift in Sources */,
+				CA871DD41D09A2C100278BD2 /* User1ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CA871DC41D09A27E00278BD2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CA871DC51D09A27E00278BD2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CA871DC91D09A27E00278BD2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

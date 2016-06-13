@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="User2ViewController" customModule="InternalMessenger" customModuleProvider="target">
+            <connections>
+                <outlet property="displayedMessage" destination="7QX-Jw-3Ic" id="xSn-MG-F5W"/>
+                <outlet property="messageField" destination="qAS-Eb-uld" id="f8Y-ZQ-ay1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="584" placeholderIntrinsicHeight="50" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="iMessage" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qAS-Eb-uld">
+                    <rect key="frame" x="62" y="542" width="477" height="50"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="Neg-2J-i2o">
+                    <rect key="frame" x="5" y="539" width="49" height="53"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="49" id="bIO-go-hRh"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEr-rP-JfO">
+                    <rect key="frame" x="551" y="551" width="36" height="30"/>
+                    <state key="normal" title="Send"/>
+                    <connections>
+                        <action selector="sendButtonPressed:" destination="-1" eventType="touchUpInside" id="32i-Pe-GrQ"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message With User 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9st-6w-LL3">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="52"/>
+                    <color key="backgroundColor" red="0.91951121794871793" green="0.20884300565886613" blue="0.42716330633503208" alpha="0.27257543103448278" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="zVg-i1-Exk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7QX-Jw-3Ic">
+                    <rect key="frame" x="0.0" y="52" width="600" height="479"/>
+                    <attributedString key="attributedText">
+                        <fragment content="hello">
+                            <attributes>
+                                <font key="NSFont" size="17" name="Helvetica"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="qAS-Eb-uld" firstAttribute="baseline" secondItem="rEr-rP-JfO" secondAttribute="baseline" id="0JX-Xa-bCd"/>
+                <constraint firstItem="rEr-rP-JfO" firstAttribute="leading" secondItem="qAS-Eb-uld" secondAttribute="trailing" constant="12" id="75y-ym-e2Y"/>
+                <constraint firstItem="9st-6w-LL3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="7xy-1L-clU"/>
+                <constraint firstItem="Neg-2J-i2o" firstAttribute="top" secondItem="7QX-Jw-3Ic" secondAttribute="bottom" constant="8" id="BrK-ze-uvj"/>
+                <constraint firstItem="7QX-Jw-3Ic" firstAttribute="top" secondItem="9st-6w-LL3" secondAttribute="bottom" id="CIP-Ib-ulm"/>
+                <constraint firstItem="qAS-Eb-uld" firstAttribute="top" secondItem="7QX-Jw-3Ic" secondAttribute="bottom" constant="11" id="Csx-At-yuY"/>
+                <constraint firstItem="9st-6w-LL3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="E9o-qh-4YR"/>
+                <constraint firstItem="Neg-2J-i2o" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottomMargin" id="ca2-B9-dNL"/>
+                <constraint firstItem="Neg-2J-i2o" firstAttribute="centerY" secondItem="rEr-rP-JfO" secondAttribute="centerY" id="glE-l8-Cil"/>
+                <constraint firstItem="7QX-Jw-3Ic" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ima-bU-CiK"/>
+                <constraint firstItem="9st-6w-LL3" firstAttribute="leading" secondItem="7QX-Jw-3Ic" secondAttribute="leading" id="jh2-fK-cFW"/>
+                <constraint firstItem="Neg-2J-i2o" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="m7f-2L-iEU"/>
+                <constraint firstItem="9st-6w-LL3" firstAttribute="centerX" secondItem="qAS-Eb-uld" secondAttribute="centerX" id="uT4-Qb-c2c"/>
+                <constraint firstAttribute="trailing" secondItem="9st-6w-LL3" secondAttribute="trailing" id="vdo-BN-ux0"/>
+                <constraint firstItem="qAS-Eb-uld" firstAttribute="leading" secondItem="Neg-2J-i2o" secondAttribute="trailing" constant="8" symbolic="YES" id="yF2-U5-qwK"/>
+                <constraint firstItem="qAS-Eb-uld" firstAttribute="baseline" secondItem="rEr-rP-JfO" secondAttribute="firstBaseline" id="zC4-Ai-ct8"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="camera_icon.png" width="225" height="225"/>
+    </resources>
+</document>
